@@ -1,108 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portafolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Portafolio</title>
-</head>
+  <body>
+    <nav class="menu__content">
+      <i class="bx bx-menu menu__icon"></i>
+      <ul class="menu__list">
+        <li><a class="menu__link" href="#home">Home</a></li>
+        <li><a class="menu__link" href="#servicios">Servicios</a></li>
+        <li><a class="menu__link" href="#acerca-de-mi">Acerca de mí</a></li>
+        <li>
+          <a class="menu__link" href="#mis-habilidades">Mis habilidades</a>
+        </li>
+        <li><a class="menu__link" href="#mi-portafolio">Mi portafolio</a></li>
+        <li><a class="menu__link" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="menu__content">
-    <i class='bx bx-menu menu__icon'></i>
-    <ul class="menu__list">
-      <li><a class="menu__link" href="#home">Home</a></li>
-      <li><a class="menu__link" href="#servicios">Servicios</a></li>
-      <li><a class="menu__link" href="#acerca-de-mi">Acerca de mí</a></li>
-      <li><a class="menu__link" href="#mis-habilidades">Mis habilidades</a></li>
-      <li><a class="menu__link" href="#mi-portafolio">Mi portafolio</a></li>
-      <li><a class="menu__link" href="#contacto">Contacto</a></li>
-    </ul>
+    <header class="portada">
+      <div class="portada__nombre">
+        <h1>
+          Soy
+          <hr class="first" />
+          <span>Jorge</span>
+          <hr class="second" />
+        </h1>
+        <p>Marketing y <br class="salto" />diseñador UX/UI</p>
+        <p>
+          <span>3 años</span>
+          experiencia
+        </p>
+        <div class="portada__icon">
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-instagram-alt"></i>
+          <i class="bx bxl-twitter"></i>
+        </div>
+      </div>
+      <section class="portada__content">
+        <div class="portada__imagen">
+          <img src="assets/img/photo.png" alt="Imagen Jorge" />
+        </div>
+      </section>
+    </header>
 
-  </nav>
-
-  <header class="portada">
-    <div class="portada__nombre">
-      <h1>Soy
-        <hr><span>Jorge</span>
-      </h1>
-      <p>Marketing y<br>diseñador UX/UI</p>
-      <p>
-        <span>3 años</span>
-        experiencia
-      </p>
-      <div class="portada__icon">
-        <i class='bx bxl-linkedin'></i>
-        <i class='bx bxl-instagram-alt'></i>
-        <i class='bx bxl-twitter'></i>
+    <div class="experiencia__content">
+      <div class="experiencia__icon">
+        <i class="bx bxl-google icon--style"></i>
+        <i class="bx bxl-amazon icon--style"></i>
+        <i class="bx bxl-spotify icon--style"></i>
       </div>
     </div>
-    <section class="portada__content">
 
-      <div class="portada__imagen">
-        <img src="assets/img/photo.png" alt="Imagen Jorge">
-      </div>
-    </section>
-  </header>
-  <div class="experiencia__content">
-    <div class="experiencia__icon">
-      <i class='bx bxl-google icon--style'></i>
-      <i class='bx bxl-amazon icon--style'></i>
-      <i class='bx bxl-spotify icon--style'></i>
-    </div>
-  </div>
-  <main class="content">
-    <section id="acerca-de-mi" class="acerca-de-mi__content">
-      <h2 class="title">Acerca de mí</h2>
-      <p class="acerca-de-mi__description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laboriosam quisquam sint. Explicabo ex in et.
-        Itaque ullam id esse earum libero non. Quo omnis, quasi sit fugit ipsa excepturi!
-      </p>
-    </section>
-  <section id="servicios" class="servicios__content">
-    <h2 class="title">Servicios</h2>
-    <p class="servicios__description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laboriosam quisquam sint. Explicabo ex in et.
-      Itaque ullam id esse earum libero non. Quo omnis, quasi sit fugit ipsa excepturi!
-    </p>
-  </section>
-  <section id="mis-habilidades" class="mis-habilidades__content">
-    <h2 class="title">Mis habilidades</h2>
-    <p class="mis-habilidades__description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laboriosam quisquam sint. Explicabo ex in et.
-      Itaque ullam id esse earum libero non. Quo omnis, quasi sit fugit ipsa excepturi!
-    </p>
-  </section>
-  <section id="mi-portafolio" class="mi-portafolio__content">
-    <h2 class="title">Mi portafolio</h2>
-    <p class="mi-portafolio__description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laboriosam quisquam sint. Explicabo ex in et.
-      Itaque ullam id esse earum libero non. Quo omnis, quasi sit fugit ipsa excepturi!
-    </p>
-  </section>
-  <h2 class="title">Contacto</h2>
-  <section id="contacto" class="contacto__content">
-    <div class="contacto__info">
-      <div class="contacto__icon">
-        <i class='bx bxs-phone icon--color'></i>
-        <h3>Número Celular</h3>
-        <p>5523652412</p>
-      </div>
-      <div class="contacto__icon">
-        <i class='bx bxs-envelope icon--color' ></i>
-        <h3>Email</h3>
-        <p>ejemplo@correo.com</p>
-      </div>
-    </div>
-  </section>
-</main>
-  <footer class="copyright">Hecho con 🤍 en Academlo</footer>
-</body>
+    <main class="content">
+      <section id="acerca-de-mi" class="acerca-de-mi__content">
+        <h2 class="title">Acerca de mí</h2>
+        <p class="acerca-de-mi__description">
+          Explicabo ex in et. Itaque ullam id esse earum libero non. Quo omnis,
+          quasi sit fugit ipsa excepturi!. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Assumenda qui sit consequatur ipsa alias
+          quisquam itaque, Consequatur porro saepe architecto cum necessitatibus
+          deserunt libero.
+        </p>
+      </section>
+      <h2 class="title">Servicios</h2>
+      <section id="servicios" class="servicios__content">
+        <div class="servicios__info">
+          <div class="servicios__icon">
+            <img src="assets/img/pencil.svg" alt="reserarch" />
+            <h3>UX/UI Disign</h3>
+            <p>Desde diseño hasta implemetacion de desarrollo</p>
+          </div>
+          <div class="servicios__icon">
+            <img src="assets/img/speaker.svg" alt="reserarch" />
+            <h3>Marketing</h3>
+            <p>Desde diseño hasta implemetacion de desarrollo</p>
+          </div>
+          <div class="servicios__icon">
+            <img src="assets/img/search.svg" alt="reserarch" />
+            <h3>Research</h3>
+            <p>Desde diseño hasta implemetacion de desarrollo</p>
+          </div>
+        </div>
+      </section>
+      <section id="mis-habilidades" class="mis-habilidades__content">
+        <h2 class="title">Mis habilidades</h2>
+        <div class="mis-habilidades__bar">
+          <p style="width:80%" data-value="80">Marketing:</p>
+          <progress max="100" value="80" class="html5">
+            <div class="progress-bar">
+              <span style="width: 80%">95%</span>
+            </div>
+          </progress>
+          <p style="width:80%" data-value="80">UI Design:</p>
+          <progress max="100" value="80" class="html5">
+            <div class="progress-bar">
+              <span style="width: 80%">95%</span>
+            </div>
+          </progress>
+          <p style="width:80%" data-value="80">UX Research:</p>
+          <progress max="100" value="80" class="html5">
+            <div class="progress-bar">
+              <span style="width: 80%">80%</span>
+            </div>
+          </progress>
+        </div>
+      </section>
+      <section id="mi-portafolio" class="mi-portafolio__content">
+        <h2 class="title">Mi portafolio</h2>
+        <p class="mi-portafolio__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+          laboriosam quisquam sint. Explicabo ex in et. Itaque ullam id esse
+          earum libero non. Quo omnis, quasi sit fugit ipsa excepturi!
+        </p>
+      </section>
+      <h2 class="title">Contacto</h2>
+      <section id="contacto" class="contacto__content">
+        <div class="contacto__info">
+          <div class="contacto__icon">
+            <i class="bx bxs-phone icon--color"></i>
+            <h3>Número Celular</h3>
+            <p>5523652412</p>
+          </div>
+          <div class="contacto__icon">
+            <i class="bx bxs-envelope icon--color"></i>
+            <h3>Email</h3>
+            <p>ejemplo@correo.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="copyright">Hecho con 🤍 en Academlo</footer>
+  </body>
 </html>
