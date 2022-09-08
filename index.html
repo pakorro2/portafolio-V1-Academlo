@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>Portafolio</title>
 </head>
@@ -18,7 +19,7 @@
   <nav class="menu__content">
     <i class='bx bx-x menu__icon menu--close'></i>
     <ul class="menu__list">
-      <li><a class="menu__link" href="#">Inicio</a></li>
+      <li><a class="menu__link" href="index.html">Inicio</a></li>
       <li><a class="menu__link" href="#servicios">Servicios</a></li>
       <li><a class="menu__link" href="#acerca-de-mi">Acerca de mí</a></li>
       <li>
@@ -31,12 +32,12 @@
   <i class='bx bx-menu menu__icon menu--open'></i>
 </div>
 
-  <header class="portada">
-    <div class="portada__nombre">
+  <header class="portada" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="portada__nombre ">
       <h1>
         Soy
         <hr class="first" />
-        <span>Jorge</span>
+        <span >Jorge</span>
         <hr class="second" />
       </h1>
       <p>Marketing y <br class="salto" />diseñador UX/UI</p>
@@ -57,7 +58,7 @@
     </section>
   </header>
 
-  <div class="experiencia__content">
+  <div class="experiencia__content" data-aos="fade-up" data-aos-duration="1000">
     <div class="experiencia__icon">
       <i class="bx bxl-google icon--style"></i>
       <i class="bx bxl-amazon icon--style"></i>
@@ -66,30 +67,35 @@
   </div>
 
   <main class="content">
-    <section id="acerca-de-mi" class="acerca-de-mi__content">
-      <h2 class="title">Acerca de mí</h2>
-      <p class="acerca-de-mi__description">
-        Explicabo ex in et. Itaque ullam id esse earum libero non. Quo omnis,
-        quasi sit fugit ipsa excepturi!. Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Assumenda qui sit consequatur ipsa alias
-        quisquam itaque, Consequatur porro saepe architecto cum necessitatibus
-        deserunt libero.
-      </p>
+    <section id="acerca-de-mi " class="acerca-de-mi__content">
+      <h2 class="title escrito-a-mano">Acerca de mí</h2>
+      <div class="acerca-de-mi__description">
+        <p >Bienvenido!, soy Jorge, un diseñador con una sólida experiencia en Branding, Diseño Web UX/UI,  y WordPress.</p> 
+        <p>Siempre me he sentido atraído por las formas visuales en sus distintas representaciones. Los colores, las imágenes… llaman mi atención.Me formé en audiovisuales, multimedia y espectáculos. Y de manera natural me especialicé en diseño gráfico y web.</p>
+        <p>Tras un largo recorrido como responsable de diseño gráfico y web en medios de comunicación (publicidad, animación, prensa e internet), en 2013 decido volar por mi cuenta y dibujar mi propio presente y futuro.</p>
+        <p>Desde entonces vivo exclusivamente de mis proyectos como diseñador gráfico y web freelance. ¡Y no lo cambiaría por nada! Me gusta cuidar de cada encargo como si fuera mío, y aportar mi granito de arena en la aventura de ser un emprendedor apasionado.</p>
+          <h3>¿Lo leiste? ¡Ahora escuchalo!</h3>
+          <audio controls autoplay>
+            <source src="assets/audio/sobre-mi.mp3" type="audio/mpeg">
+            <source src="assets/audio/sobre-mi.ogg" type="audio/ogg">
+          </audio>
+      </div>
     </section>
     <h2 class="title">Servicios</h2>
     <section id="servicios" class="servicios__content">
       <div class="servicios__info">
-        <div class="servicios__icon">
+        <div class="servicios__icon" data-aos="fade-right" data-aos-duration="1500">
           <img src="assets/img/pencil.svg" alt="reserarch" />
           <h3>UX/UI Disign</h3>
           <p>Desde diseño hasta implemetacion de desarrollo</p>
         </div>
-        <div class="servicios__icon">
+        <div class="servicios__icon" data-aos="fade-up"
+        data-aos-duration="2000">
           <img src="assets/img/speaker.svg" alt="reserarch" />
           <h3>Marketing</h3>
           <p>Desde diseño hasta implemetacion de desarrollo</p>
         </div>
-        <div class="servicios__icon">
+        <div class="servicios__icon" data-aos="fade-left" data-aos-duration="1500">
           <img src="assets/img/search.svg" alt="reserarch" />
           <h3>Research</h3>
           <p>Desde diseño hasta implemetacion de desarrollo</p>
@@ -98,7 +104,7 @@
     </section>
     <section id="mis-habilidades" class="mis-habilidades__content">
       <h2 class="title">Mis habilidades</h2>
-      <div class="mis-habilidades__bar">
+      <div class="mis-habilidades__bar" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <p style="width: 95%" data-value="95">Marketing:</p>
         <progress max="100" value="95" class="html5">
           <div class="progress-bar">
@@ -122,20 +128,26 @@
     <section id="mi-portafolio" class="mi-portafolio__content">
       <h2 class="title">Mi portafolio</h2>
       <div class="mi-portafolio__proyects">
-        <img src="assets/img/ejemplo1.jpg" alt="Proyecti 1" >
-        <img src="assets/img/ejemplo2.jpg" alt="Proyecti 2" >
-        <img src="assets/img/ejemplo3.jpg" alt="Proyecti 3" >
+        <img src="assets/img/ejemplo1.jpg" alt="Proyecti 1" data-aos="zoom-out-left" data-aos-duration="2000">
+        <img src="assets/img/ejemplo2.jpg" alt="Proyecti 2" data-aos="zoom-out-down" data-aos-duration="2000">
+        <img src="assets/img/ejemplo3.jpg" alt="Proyecti 3" data-aos="zoom-out-right" data-aos-duration="2000">
+        <img src="assets/img/ejemplo1.jpg" alt="Proyecti 1" data-aos="zoom-out-left" data-aos-duration="2000">
+        <img src="assets/img/ejemplo2.jpg" alt="Proyecti 2" data-aos="zoom-out-down" data-aos-duration="2000">
+        <img src="assets/img/ejemplo3.jpg" alt="Proyecti 3" data-aos="zoom-in-up" data-aos-duration="2000">
+        <img src="assets/img/ejemplo1.jpg" alt="Proyecti 1" data-aos="zoom-in-down" data-aos-duration="2000">
+        <img src="assets/img/ejemplo2.jpg" alt="Proyecti 2" data-aos="zoom-out-down" data-aos-duration="2000">
+        <img src="assets/img/ejemplo3.jpg" alt="Proyecti 3" data-aos="zoom-in" data-aos-duration="2000">
       </div>
     </section>
     <h2 class="title">Contacto</h2>
     <section id="contacto" class="contacto__content">
-      <div class="contacto__info">
+      <div class="contacto__info" data-aos="flip-down" data-aos-duration="1000">
         <div class="contacto__icon">
           <i class="bx bxs-phone icon--color"></i>
           <h3>Número Celular</h3>
           <p>5523652412</p>
         </div>
-        <div class="contacto__icon">
+        <div class="contacto__icon" data-aos="flip-up" data-aos-duration="1000">
           <i class="bx bxs-envelope icon--color"></i>
           <h3>Email</h3>
           <p>ejemplo@correo.com</p>
@@ -147,6 +159,11 @@
   <footer class="copyright">Hecho con ❤ en Academlo</footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
